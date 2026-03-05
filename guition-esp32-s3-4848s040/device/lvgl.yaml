@@ -118,8 +118,7 @@ lvgl:
                   align: bottom_left
                   id: scene_features_label
                   text: "Features"
-            on_press:
-              # - homeassistant.service:
+            # on_press:\r\n              # - homeassistant.service:
                   # service: switch.toggle
                   # data:
                     # entity_id: switch.office_features_stateful_scene
@@ -157,8 +156,7 @@ lvgl:
                   align: bottom_left
                   id: office_scene_calls_label
                   text: "Calls"
-            on_press:
-              # - homeassistant.service:
+            # on_press:\r\n              # - homeassistant.service:
                   # service: switch.toggle
                   # data:
                     # entity_id: switch.office_calls_stateful_scene
@@ -196,8 +194,7 @@ lvgl:
                   align: bottom_left
                   id: office_scene_evening_label
                   text: "Evening"
-            on_press:
-              # - homeassistant.service:
+            # on_press:\r\n              # - homeassistant.service:
                   # service: switch.toggle
                   # data:
                     # entity_id: switch.office_evening_stateful_scene
@@ -235,8 +232,7 @@ lvgl:
                   align: bottom_left
                   id: office_scene_dimmed_label
                   text: "Dimmed"
-            on_press:
-              # - homeassistant.service:
+            # on_press:\r\n              # - homeassistant.service:
                   # service: switch.toggle
                   # data:
                     # entity_id: switch.office_dimmed_stateful_scene
@@ -396,8 +392,7 @@ lvgl:
                   align: bottom_left
                   id: filament_heater_label
                   text: "Dryer"
-            on_click:
-              # - homeassistant.service:
+            # on_click:\r\n              # - homeassistant.service:
                   # service: switch.toggle
                   # data:
                     # entity_id: switch.office_filament_heater_893b
@@ -560,8 +555,7 @@ lvgl:
                   align: bottom_left
                   id: battery_charger_label
                   text: "Charger"
-            on_click:
-              # - homeassistant.service:
+            # on_click:\r\n              # - homeassistant.service:
                   # service: switch.toggle
                   # data:
                     # entity_id: switch.d4c5
@@ -598,8 +592,7 @@ lvgl:
                   align: bottom_left
                   id: storage_lights_label
                   text: "Storage"
-            on_click:
-              # - homeassistant.service:
+            # on_click:\r\n              # - homeassistant.service:
                   # service: light.toggle
                   # data:
                     # entity_id: light.office_storage
@@ -636,8 +629,7 @@ lvgl:
                   align: bottom_left
                   id: network_rack_label
                   text: "Network Rack"
-            on_click:
-              # - homeassistant.service:
+            # on_click:\r\n              # - homeassistant.service:
                   # service: light.toggle
                   # data:
                     # entity_id: light.office_network_rack
@@ -954,8 +946,7 @@ lvgl:
               - label:
                   align: bottom_left
                   text: "Up"
-            on_click:
-              # - homeassistant.service:
+            # on_click:\r\n              # - homeassistant.service:
                   # service: climate.set_temperature
                   # data:
                     # entity_id: climate.office_air_conditioner
@@ -1018,8 +1009,7 @@ lvgl:
               - label:
                   align: bottom_left
                   text: "Down"
-            on_click:
-              # - homeassistant.service:
+            # on_click:\r\n              # - homeassistant.service:
                   # service: climate.set_temperature
                   # data:
                     # entity_id: climate.office_air_conditioner
@@ -1106,8 +1096,7 @@ lvgl:
                     arc_width: 18
                   knob:
                     bg_color: 0xFFFFFF
-                  on_value:
-                    # - homeassistant.service:
+                  # on_value:\r\n              # - homeassistant.service:
                         # service: climate.set_temperature
                         # data:
                           # entity_id: climate.office_air_conditioner
@@ -1163,8 +1152,7 @@ lvgl:
                         text_font: roboto44_font
                         text_color: 0x7A7A7A
                         align: center
-                  on_click:
-                    # - homeassistant.service:
+                  # on_click:\r\n              # - homeassistant.service:
                         # service: climate.set_temperature
                         # data:
                           # entity_id: climate.office_air_conditioner
@@ -1193,8 +1181,7 @@ lvgl:
                         text_font: roboto44_font
                         text_color: 0x7A7A7A
                         align: center
-                  on_click:
-                    # - homeassistant.service:
+                  # on_click:\r\n              # - homeassistant.service:
                         # service: climate.set_temperature
                         # data:
                           # entity_id: climate.office_air_conditioner
@@ -1357,8 +1344,7 @@ lvgl:
                     border_color: 0xE06A2A
                   clickable: true
                   adjustable: true
-                  on_value:
-                    # - homeassistant.service:
+                  # on_value:\r\n              # - homeassistant.service:
                         # service: climate.set_temperature
                         # data:
                           # entity_id: climate.office_radiator_thermostat
@@ -1430,8 +1416,7 @@ lvgl:
                         text_font: roboto44_font
                         align: center
                         text_color: 0xB0B0B0
-                  on_click:
-                    # - homeassistant.service:
+                  # on_click:\r\n              # - homeassistant.service:
                         # service: climate.set_temperature
                         # data:
                           # entity_id: climate.office_radiator_thermostat
@@ -1460,8 +1445,7 @@ lvgl:
                         text_font: roboto44_font
                         align: center
                         text_color: 0xB0B0B0
-                  on_click:
-                    # - homeassistant.service:
+                  # on_click:\r\n              # - homeassistant.service:
                         # service: climate.set_temperature
                         # data:
                           # entity_id: climate.office_radiator_thermostat
@@ -1471,3 +1455,6 @@ lvgl:
                               # return id(heating_target_temperature).state + 0.5f;
                             # }
                             # return 0.0f;
+
+
+
