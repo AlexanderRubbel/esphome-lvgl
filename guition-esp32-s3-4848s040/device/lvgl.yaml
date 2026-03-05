@@ -19,6 +19,14 @@
 
 lvgl:
   buffer_size: 100%
+  on_idle:
+    - timeout: 30s
+      then:
+        - light.turn_off: backlight
+  on_all_touch:
+    then:
+      - light.turn_on: backlight
+
   top_layer:
     widgets:
     
