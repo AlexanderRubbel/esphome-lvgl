@@ -642,7 +642,9 @@ lvgl:
                   # data:
                     # entity_id: light.office_network_rack
 
-#     - id: blinds_page
+    - id: blinds_page
+      layout: 
+        type: flex
         flex_flow: column_wrap
       scrollbar_mode: "off"
       scroll_dir: "hor"
