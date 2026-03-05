@@ -1204,7 +1204,7 @@ lvgl:
                             # }
                             # return 0.0f;
 
-#     - id: heating_lab_page
+    - id: heating_lab_page
       layout:
         type: flex
         flex_flow: column
