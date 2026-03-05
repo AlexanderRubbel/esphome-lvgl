@@ -123,10 +123,10 @@ sensor:
   #   lvgl.yaml → office_blind_open_button, office_blind_66_button,
   #               office_blind_33_button, office_blind_close_button
   # ===========================================================================
-#   - platform: homeassistant
-#     entity_id: cover.r_buero
-#     id: office_blind_position
-#     attribute: current_position
+  - platform: homeassistant
+    entity_id: cover.r_buero
+    id: office_blind_position
+    attribute: current_position
 # 
 #   # ===========================================================================
 #   # SENSOR: Aircon Current Temperature
@@ -525,16 +525,16 @@ binary_sensor:
   # RELATED UI ELEMENT:
   #   lvgl.yaml → office_aircon_button
   # ===========================================================================
-#   - platform: homeassistant
-#     id: office_air_conditioner
-#     entity_id: switch.sw_buero_right
-#     trigger_on_initial_state: true
-#     on_state:
-#       then:
-#         - lvgl.widget.update:
-#             id: office_aircon_button
-#             state:
-#               checked: !lambda return x;
+  - platform: homeassistant
+    id: office_air_conditioner
+    entity_id: switch.sw_buero_right
+    trigger_on_initial_state: true
+    on_state:
+      then:
+        - lvgl.widget.update:
+            id: office_aircon_button
+            state:
+              checked: !lambda return x;
 #         - lvgl.widget.update:
 #             id: aircon_power_button
 #             state:

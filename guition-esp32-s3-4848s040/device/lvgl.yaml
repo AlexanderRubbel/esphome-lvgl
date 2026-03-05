@@ -429,10 +429,7 @@ lvgl:
                   text: "Aircon"
             on_click:
               - lvgl.page.show: aircon_page
-              - lvgl.widget.update:
-                  id: office_aircon_button
-                  state:
-                    checked: !lambda return id(office_air_conditioner).state;
+# 
 
         # =========================================================================
         # BUTTON: More
@@ -1455,6 +1452,7 @@ lvgl:
                               # return id(heating_target_temperature).state + 0.5f;
                             # }
                             # return 0.0f;
+
 
 
 
