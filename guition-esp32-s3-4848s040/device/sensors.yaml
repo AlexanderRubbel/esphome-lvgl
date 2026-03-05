@@ -596,22 +596,22 @@ binary_sensor:
 #   # RELATED UI ELEMENT:
 #   #   lvgl.yaml → filament_heater_button
 #   # ===========================================================================
-#   - platform: homeassistant
-#     id: office_filament_heater
-#     entity_id: switch.office_filament_heater_893b
-#     trigger_on_initial_state: true
-#     on_state:
-#       then:
-#         - lvgl.widget.update:
-#             id: filament_heater_button
-#             state:
-#               checked: !lambda return x;
-#         - lvgl.widget.update:
-#             id: filament_heater_icon
-#             hidden: !lambda return x;
-#         - lvgl.widget.update:
-#             id: dryer_humidity_container
-#             hidden: !lambda return !x;
+  - platform: homeassistant
+    id: office_filament_heater
+    entity_id: switch.sw_buero_right
+    trigger_on_initial_state: true
+    on_state:
+      then:
+        - lvgl.widget.update:
+            id: filament_heater_button
+            state:
+              checked: !lambda return x;
+        - lvgl.widget.update:
+            id: filament_heater_icon
+            hidden: !lambda return x;
+        - lvgl.widget.update:
+            id: dryer_humidity_container
+            hidden: !lambda return !x;
 # 
 #   # ===========================================================================
 #   # TEMPLATE SENSOR: Blind at 100% (Fully Open)
