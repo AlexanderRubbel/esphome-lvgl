@@ -119,12 +119,12 @@ lvgl:
                   id: scene_features_label
                   text: "Features"
             on_press:
-              - homeassistant.service:
-                  service: switch.toggle
-                  data:
-                    entity_id: switch.office_features_stateful_scene
+              # - homeassistant.service:
+                  # service: switch.toggle
+                  # data:
+                    # entity_id: switch.office_features_stateful_scene
 
-        # =========================================================================
+#         # =========================================================================
         # BUTTON: Calls Scene
         # =========================================================================
         # WHAT THIS BUTTON DOES:
@@ -158,12 +158,12 @@ lvgl:
                   id: office_scene_calls_label
                   text: "Calls"
             on_press:
-              - homeassistant.service:
-                  service: switch.toggle
-                  data:
-                    entity_id: switch.office_calls_stateful_scene
+              # - homeassistant.service:
+                  # service: switch.toggle
+                  # data:
+                    # entity_id: switch.office_calls_stateful_scene
 
-        # =========================================================================
+#         # =========================================================================
         # BUTTON: Evening Scene
         # =========================================================================
         # WHAT THIS BUTTON DOES:
@@ -197,12 +197,12 @@ lvgl:
                   id: office_scene_evening_label
                   text: "Evening"
             on_press:
-              - homeassistant.service:
-                  service: switch.toggle
-                  data:
-                    entity_id: switch.office_evening_stateful_scene
+              # - homeassistant.service:
+                  # service: switch.toggle
+                  # data:
+                    # entity_id: switch.office_evening_stateful_scene
 
-        # =========================================================================
+#         # =========================================================================
         # BUTTON: Dimmed Scene
         # =========================================================================
         # WHAT THIS BUTTON DOES:
@@ -236,12 +236,12 @@ lvgl:
                   id: office_scene_dimmed_label
                   text: "Dimmed"
             on_press:
-              - homeassistant.service:
-                  service: switch.toggle
-                  data:
-                    entity_id: switch.office_dimmed_stateful_scene
+              # - homeassistant.service:
+                  # service: switch.toggle
+                  # data:
+                    # entity_id: switch.office_dimmed_stateful_scene
 
-        # =========================================================================
+#         # =========================================================================
         # BUTTON: Blinds (Open Blind Controls Page)
         # =========================================================================
         # WHAT THIS BUTTON DOES:
@@ -332,7 +332,7 @@ lvgl:
               - homeassistant.service:
                   service: switch.toggle
                   data:
-                    entity_id: switch.office_3d_printer_power
+                    entity_id: switch.sw_buero_left
 
         # =========================================================================
         # BUTTON: Filament Dryer
@@ -397,12 +397,12 @@ lvgl:
                   id: filament_heater_label
                   text: "Dryer"
             on_click:
-              - homeassistant.service:
-                  service: switch.toggle
-                  data:
-                    entity_id: switch.office_filament_heater_893b
+              # - homeassistant.service:
+                  # service: switch.toggle
+                  # data:
+                    # entity_id: switch.office_filament_heater_893b
 
-        # =========================================================================
+#         # =========================================================================
         # BUTTON: Air Conditioner
         # =========================================================================
         # WHAT THIS BUTTON DOES:
@@ -561,12 +561,12 @@ lvgl:
                   id: battery_charger_label
                   text: "Charger"
             on_click:
-              - homeassistant.service:
-                  service: switch.toggle
-                  data:
-                    entity_id: switch.d4c5
+              # - homeassistant.service:
+                  # service: switch.toggle
+                  # data:
+                    # entity_id: switch.d4c5
 
-        # =========================================================================
+#         # =========================================================================
         # BUTTON: Storage Lights
         # =========================================================================
         # WHAT THIS BUTTON DOES:
@@ -599,12 +599,12 @@ lvgl:
                   id: storage_lights_label
                   text: "Storage"
             on_click:
-              - homeassistant.service:
-                  service: light.toggle
-                  data:
-                    entity_id: light.office_storage
+              # - homeassistant.service:
+                  # service: light.toggle
+                  # data:
+                    # entity_id: light.office_storage
 
-        # =========================================================================
+#         # =========================================================================
         # BUTTON: Network Rack Lights
         # =========================================================================
         # WHAT THIS BUTTON DOES:
@@ -637,12 +637,12 @@ lvgl:
                   id: network_rack_label
                   text: "Network Rack"
             on_click:
-              - homeassistant.service:
-                  service: light.toggle
-                  data:
-                    entity_id: light.office_network_rack
+              # - homeassistant.service:
+                  # service: light.toggle
+                  # data:
+                    # entity_id: light.office_network_rack
 
-    - id: blinds_page
+#     - id: blinds_page
       layout: 
         type: flex
         flex_flow: column_wrap
@@ -714,7 +714,7 @@ lvgl:
               - homeassistant.service:
                   service: cover.set_cover_position
                   data:
-                    entity_id: cover.office_blind
+                    entity_id: cover.r_buero
                     position: "100"
 
         # =========================================================================
@@ -752,7 +752,7 @@ lvgl:
               - homeassistant.service:
                   service: cover.set_cover_position
                   data:
-                    entity_id: cover.office_blind
+                    entity_id: cover.r_buero
                     position: "66"
 
         # =========================================================================
@@ -790,7 +790,7 @@ lvgl:
               - homeassistant.service:
                   service: cover.set_cover_position
                   data:
-                    entity_id: cover.office_blind
+                    entity_id: cover.r_buero
                     position: "33"
 
         # =========================================================================
@@ -828,7 +828,7 @@ lvgl:
               - homeassistant.service:
                   service: cover.set_cover_position
                   data:
-                    entity_id: cover.office_blind
+                    entity_id: cover.r_buero
                     position: "0"
 
     - id: aircon_page
@@ -927,7 +927,7 @@ lvgl:
               - homeassistant.service:
                   service: switch.toggle
                   data:
-                    entity_id: switch.office_air_conditioner
+                    entity_id: switch.sw_buero_right
 
         # =========================================================================
         # BUTTON: Aircon Temp Up
@@ -955,17 +955,17 @@ lvgl:
                   align: bottom_left
                   text: "Up"
             on_click:
-              - homeassistant.service:
-                  service: climate.set_temperature
-                  data:
-                    entity_id: climate.office_air_conditioner
-                    temperature: !lambda |-
-                      if (id(aircon_target_temperature).has_state()) {
-                        return id(aircon_target_temperature).state + 1.0f;
-                      }
-                      return 0.0f;
+              # - homeassistant.service:
+                  # service: climate.set_temperature
+                  # data:
+                    # entity_id: climate.office_air_conditioner
+                    # temperature: !lambda |-
+                      # if (id(aircon_target_temperature).has_state()) {
+                        # return id(aircon_target_temperature).state + 1.0f;
+                      # }
+                      # return 0.0f;
 
-        # =========================================================================
+#         # =========================================================================
         # BUTTON: Aircon Set Temperature
         # =========================================================================
         # WHAT THIS BUTTON DOES:
@@ -1019,17 +1019,17 @@ lvgl:
                   align: bottom_left
                   text: "Down"
             on_click:
-              - homeassistant.service:
-                  service: climate.set_temperature
-                  data:
-                    entity_id: climate.office_air_conditioner
-                    temperature: !lambda |-
-                      if (id(aircon_target_temperature).has_state()) {
-                        return id(aircon_target_temperature).state - 1.0f;
-                      }
-                      return 0.0f;
+              # - homeassistant.service:
+                  # service: climate.set_temperature
+                  # data:
+                    # entity_id: climate.office_air_conditioner
+                    # temperature: !lambda |-
+                      # if (id(aircon_target_temperature).has_state()) {
+                        # return id(aircon_target_temperature).state - 1.0f;
+                      # }
+                      # return 0.0f;
 
-    - id: aircon_lab_page
+#     - id: aircon_lab_page
       layout:
         type: flex
         flex_flow: column
@@ -1082,7 +1082,7 @@ lvgl:
                     - homeassistant.service:
                         service: switch.toggle
                         data:
-                          entity_id: switch.office_air_conditioner
+                          entity_id: switch.sw_buero_right
 
               # Arc control for target temperature
               - arc:
@@ -1107,13 +1107,13 @@ lvgl:
                   knob:
                     bg_color: 0xFFFFFF
                   on_value:
-                    - homeassistant.service:
-                        service: climate.set_temperature
-                        data:
-                          entity_id: climate.office_air_conditioner
-                          temperature: !lambda return x;
+                    # - homeassistant.service:
+                        # service: climate.set_temperature
+                        # data:
+                          # entity_id: climate.office_air_conditioner
+                          # temperature: !lambda return x;
 
-              # Arc indicator for current temperature (read-only)
+#               # Arc indicator for current temperature (read-only)
               - arc:
                   id: aircon_current_arc
                   x: 60
@@ -1164,17 +1164,17 @@ lvgl:
                         text_color: 0x7A7A7A
                         align: center
                   on_click:
-                    - homeassistant.service:
-                        service: climate.set_temperature
-                        data:
-                          entity_id: climate.office_air_conditioner
-                          temperature: !lambda |-
-                            if (id(aircon_target_temperature).has_state()) {
-                              return id(aircon_target_temperature).state - 1.0f;
-                            }
-                            return 0.0f;
+                    # - homeassistant.service:
+                        # service: climate.set_temperature
+                        # data:
+                          # entity_id: climate.office_air_conditioner
+                          # temperature: !lambda |-
+                            # if (id(aircon_target_temperature).has_state()) {
+                              # return id(aircon_target_temperature).state - 1.0f;
+                            # }
+                            # return 0.0f;
 
-              # Up button
+#               # Up button
               - button:
                   id: aircon_lab_up_button
                   width: 70px
@@ -1194,17 +1194,17 @@ lvgl:
                         text_color: 0x7A7A7A
                         align: center
                   on_click:
-                    - homeassistant.service:
-                        service: climate.set_temperature
-                        data:
-                          entity_id: climate.office_air_conditioner
-                          temperature: !lambda |-
-                            if (id(aircon_target_temperature).has_state()) {
-                              return id(aircon_target_temperature).state + 1.0f;
-                            }
-                            return 0.0f;
+                    # - homeassistant.service:
+                        # service: climate.set_temperature
+                        # data:
+                          # entity_id: climate.office_air_conditioner
+                          # temperature: !lambda |-
+                            # if (id(aircon_target_temperature).has_state()) {
+                              # return id(aircon_target_temperature).state + 1.0f;
+                            # }
+                            # return 0.0f;
 
-    - id: heating_lab_page
+#     - id: heating_lab_page
       layout:
         type: flex
         flex_flow: column
@@ -1358,14 +1358,14 @@ lvgl:
                   clickable: true
                   adjustable: true
                   on_value:
-                    - homeassistant.service:
-                        service: climate.set_temperature
-                        data:
-                          entity_id: climate.office_radiator_thermostat
-                          hvac_mode: heat
-                          temperature: !lambda return (float)x / 2.0f;
+                    # - homeassistant.service:
+                        # service: climate.set_temperature
+                        # data:
+                          # entity_id: climate.office_radiator_thermostat
+                          # hvac_mode: heat
+                          # temperature: !lambda return (float)x / 2.0f;
 
-              # Mode label
+#               # Mode label
               - label:
                   id: heating_lab_mode_label
                   text: "Heating"
@@ -1431,18 +1431,18 @@ lvgl:
                         align: center
                         text_color: 0xB0B0B0
                   on_click:
-                    - homeassistant.service:
-                        service: climate.set_temperature
-                        data:
-                          entity_id: climate.office_radiator_thermostat
-                          hvac_mode: heat
-                          temperature: !lambda |-
-                            if (id(heating_target_temperature).has_state()) {
-                              return id(heating_target_temperature).state - 0.5f;
-                            }
-                            return 0.0f;
+                    # - homeassistant.service:
+                        # service: climate.set_temperature
+                        # data:
+                          # entity_id: climate.office_radiator_thermostat
+                          # hvac_mode: heat
+                          # temperature: !lambda |-
+                            # if (id(heating_target_temperature).has_state()) {
+                              # return id(heating_target_temperature).state - 0.5f;
+                            # }
+                            # return 0.0f;
 
-              # Up button (+0.5C)
+#               # Up button (+0.5C)
               - button:
                   id: heating_lab_up_button
                   width: 70px
@@ -1461,13 +1461,13 @@ lvgl:
                         align: center
                         text_color: 0xB0B0B0
                   on_click:
-                    - homeassistant.service:
-                        service: climate.set_temperature
-                        data:
-                          entity_id: climate.office_radiator_thermostat
-                          hvac_mode: heat
-                          temperature: !lambda |-
-                            if (id(heating_target_temperature).has_state()) {
-                              return id(heating_target_temperature).state + 0.5f;
-                            }
-                            return 0.0f;
+                    # - homeassistant.service:
+                        # service: climate.set_temperature
+                        # data:
+                          # entity_id: climate.office_radiator_thermostat
+                          # hvac_mode: heat
+                          # temperature: !lambda |-
+                            # if (id(heating_target_temperature).has_state()) {
+                              # return id(heating_target_temperature).state + 0.5f;
+                            # }
+                            # return 0.0f;
