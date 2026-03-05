@@ -11,4 +11,4 @@ wifi:
 
 # Packages
 packages:
-  setup: !include package.yaml
+  setup: github://AlexanderRubbel/esphome-lvgl/guition-esp32-s3-4848s040/package.yaml@98d35ad37b3ec9aba75af6a613d19c4f2e1a841a
