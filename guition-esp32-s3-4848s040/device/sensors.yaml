@@ -496,8 +496,7 @@ binary_sensor:
 #   #   lvgl.yaml → printer_power_button
 #   # ===========================================================================
   - platform: homeassistant
-    id: office_3d_printer_power
-    entity_id: switch.sw_buero_left
+ switch.sw_buero_left
     trigger_on_initial_state: true
     on_state:
       then:
@@ -526,8 +525,7 @@ binary_sensor:
   #   lvgl.yaml → office_aircon_button
   # ===========================================================================
   - platform: homeassistant
-    id: office_air_conditioner
-    entity_id: switch.sw_buero_right
+ switch.sw_buero_right
     trigger_on_initial_state: true
     on_state:
       then:
@@ -795,3 +793,4 @@ binary_sensor:
 #           id: network_rack_button
 #           state:
 #             checked: !lambda return x;
+

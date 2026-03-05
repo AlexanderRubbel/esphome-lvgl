@@ -323,7 +323,7 @@ lvgl:
               - label:
                   align: bottom_left
                   id: printer_power_label
-                  text: "Printer"
+                  text: "Licht Links"
             on_click:
               - homeassistant.service:
                   service: switch.toggle
@@ -391,11 +391,12 @@ lvgl:
               - label:
                   align: bottom_left
                   id: filament_heater_label
-                  text: "Dryer"
-            # on_click:\r\n              # - homeassistant.service:
-                  # service: switch.toggle
-                  # data:
-                    # entity_id: switch.office_filament_heater_893b
+                  text: "Licht Rechts"
+            on_click:
+              - homeassistant.service:
+                  service: switch.toggle
+                  data:
+                    entity_id: switch.sw_buero_right
 
 #         # =========================================================================
         # BUTTON: Air Conditioner
@@ -428,7 +429,10 @@ lvgl:
                   align: bottom_left
                   text: "Aircon"
             on_click:
-              - lvgl.page.show: aircon_page
+              - homeassistant.service:
+                  service: switch.toggle
+                  data:
+                    entity_id: switch.sw_buero_right
 # 
 
         # =========================================================================
